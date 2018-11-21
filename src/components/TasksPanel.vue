@@ -98,7 +98,8 @@
     import VSubheader from "vuetify/src/components/VSubheader/VSubheader"
     import { bus } from '../bus';
 
-    const SERVER_URL = "http://localhost:8080";
+    // const SERVER_URL = "http://localhost:8080";
+    const SERVER_URL = "http://v1-dot-hydro-earth.appspot.com";
 
     export default {
         inherit: true,
