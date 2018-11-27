@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hydro-earth-webapp/precache-manifest.e8bd311cd32b07f95c70560ff84e0216.js"
+  "/hydro-earth-webapp/precache-manifest.6d8fbb1a0b7212e357c7492cf95d11a8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hydro-earth-webapp"});
