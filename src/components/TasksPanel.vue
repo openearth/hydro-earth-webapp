@@ -99,7 +99,8 @@
     import { bus } from '../bus';
 
     // const SERVER_URL = "http://localhost:8080";
-    const SERVER_URL = "https://v1-dot-hydro-earth.appspot.com";
+    // const SERVER_URL = "//v1-dot-hydro-earth.appspot.com";
+    const SERVER_URL = "//hydro-earth.appspot.com";
 
     export default {
         inherit: true,
