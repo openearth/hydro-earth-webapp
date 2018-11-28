@@ -43,7 +43,7 @@
     import {Component, Vue} from "vue-property-decorator";
     import VCard from "vuetify/src/components/VCard/VCard";
     import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-    import Mapbox from "../components/Mapbox";
+    import Mapbox from "@/components/Mapbox.vue";
 
 
     @Component({
