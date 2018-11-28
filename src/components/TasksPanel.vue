@@ -94,8 +94,8 @@
 </template>
 
 <script>
-    import VDataTable from "vuetify/src/components/VDataTable/VDataTable"
-    import VSubheader from "vuetify/src/components/VSubheader/VSubheader"
+    import VDataTable from "vuetify/lib"
+    import VSubheader from "vuetify/lib"
     import { bus } from '../bus';
 
     // const SERVER_URL = "http://localhost:8080";
