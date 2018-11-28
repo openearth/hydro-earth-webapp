@@ -138,18 +138,12 @@
 </template>
 
 <script>
-    import VToolbar from "vuetify/src/components/VToolbar/VToolbar"
-    import VLabel from "vuetify/src/components/VLabel/VLabel"
-    import VTooltip from "vuetify/src/components/VTooltip/VTooltip"
-    import ModelsPanel from './components/TasksPanel'
-    import VCard from "vuetify/src/components/VCard/VCard"
-    import VTabs from "vuetify/src/components/VTabs/VTabs"
-    import VTab from "vuetify/src/components/VTabs/VTab"
-    import VTabItem from "vuetify/src/components/VTabs/VTabItem"
+    import {Vue} from "vue";
+    import {VToolbar, VLabel, VTooltip, VCard, VTabs, VTab, VTabItem} from "vuetify/lib"
+    import ModelsPanel from '@/components/TasksPanel'
 
     import firebase from 'firebase'
-    import {Vue} from "vue";
-    import {bus} from "./bus";
+    import {bus} from "@/bus";
 
     export default {
         name: 'App',

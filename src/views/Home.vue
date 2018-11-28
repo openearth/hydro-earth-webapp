@@ -39,9 +39,21 @@
     -->
 </template>
 
+<script lang="ts">     
+    import {Component, Vue} from "vue-property-decorator";     
+    import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src     
+    import Mapbox from "@/components/Mapbox.vue";      
+
+    export default class Home extends Vue {         
+        components: {HelloWorld, Mapbox}     
+    } 
+</script>
+
+<!--
+
 <script lang="ts">
     import {Component, Vue} from "vue-property-decorator";
-    import VCard from "vuetify/src/components/VCard/VCard";
+    import VCard from "vuetify/lib";
     import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
     import Mapbox from "@/components/Mapbox.vue";
 
@@ -57,6 +69,7 @@
 
     }
 </script>
+-->
 
 <style>
     html {
