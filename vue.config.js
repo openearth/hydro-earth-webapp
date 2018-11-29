@@ -1,3 +1,4 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production' ? '/hydro-earth-webapp/' : '/'
+  baseUrl: '/'
+  // baseUrl: process.env.NODE_ENV === 'production' ? '/hydro-earth-webapp/' : '/'
 }
