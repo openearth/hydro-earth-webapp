@@ -6,26 +6,27 @@ import Tasks from './views/Tasks.vue';
 Vue.use(Router);
 
 export default new Router({
-  // mode: 'history', // this does not work with GitHub Pages :(
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/tasks',
-      name: 'tasks',
-      component: Tasks,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-    },
-  ],
+    // mode: 'history', // this does not work with GitHub Pages :(
+    mode: 'hash',
+    base: process.env.BASE_URL,
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home,
+        },
+        {
+            path: '/tasks',
+            name: 'tasks',
+            component: Tasks,
+        },
+        {
+            path: '/about',
+            name: 'about',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+        },
+    ],
 });
