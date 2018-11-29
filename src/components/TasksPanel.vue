@@ -18,10 +18,10 @@
                 <td class="text-xs-left">
                     {{ props.item.status }}
                     <v-progress-circular v-if="isRunning(props.item)"
-                            :size="15"
-                            :width="2"
-                            indeterminate
-                            color="primary"
+                                         :size="15"
+                                         :width="2"
+                                         indeterminate
+                                         color="primary"
                     ></v-progress-circular>
                 </td>
                 <td class="px-0 ma-0">
@@ -94,9 +94,9 @@
 </template>
 
 <script>
-    import VDataTable from "vuetify/lib"
-    import VSubheader from "vuetify/lib"
-    import { bus } from '../bus';
+    import VDataTable from "vuetify/src/components/VDataTable/VDataTable"
+    import VSubheader from "vuetify/src/components/VSubheader/VSubheader"
+    import {bus} from '../bus';
 
     // const SERVER_URL = "http://localhost:8080";
     // const SERVER_URL = "//v1-dot-hydro-earth.appspot.com";
@@ -164,25 +164,25 @@
             getTemplate('wflow');
             getTemplate('iMOD');
 
-/*
-            if (!this.$store.state.userToken) {
-                console.log('No user token.');
+            /*
+                        if (!this.$store.state.userToken) {
+                            console.log('No user token.');
 
-                // hack
-                function refreshData() {
-                    const token = c.$store.state.userToken;
-                    if (token) {
-                        fetchData(token);
-                    } else {
-                        setTimeout(refreshData, 500);
-                    }
-                }
+                            // hack
+                            function refreshData() {
+                                const token = c.$store.state.userToken;
+                                if (token) {
+                                    fetchData(token);
+                                } else {
+                                    setTimeout(refreshData, 500);
+                                }
+                            }
 
-                setTimeout(refreshData, 500);
-            } else {
-                fetchData(this.$store.state.userToken)
-            }
-*/
+                            setTimeout(refreshData, 500);
+                        } else {
+                            fetchData(this.$store.state.userToken)
+                        }
+            */
 
 
         },
@@ -202,7 +202,7 @@
                 },
                 modelTypes: ['wflow', 'iMOD'],
                 modelTemplates: {},
-                pagination: { sortBy: 'created', descending: true },
+                pagination: {sortBy: 'created', descending: true},
                 headers: [
                     {text: 'Name', align: 'left', value: 'name'},
                     {text: 'Author', value: 'author'},
@@ -225,11 +225,11 @@
                 anchor.target = '_blank';
                 anchor.click();
             },
-            onNewTaskModelTypeChanged: function(event) {
+            onNewTaskModelTypeChanged: function (event) {
                 this.newTask.parameters = this.modelTemplates[this.newTask.type];
             },
             onDeleteTask: function (task) {
-                if(!this.validateUser('delete task')) {
+                if (!this.validateUser('delete task')) {
                     return;
                 }
 
@@ -258,14 +258,14 @@
                     console.log('Removed: ' + JSON.stringify(removed));
                 })
             },
-            onAddTask: function() {
-                if(!this.validateUser('add a new task')) {
+            onAddTask: function () {
+                if (!this.validateUser('add a new task')) {
                     return;
                 }
 
                 this.showAddTaskDialog = true
             },
-            onSaveNewTask: function() {
+            onSaveNewTask: function () {
                 console.log('Saving task ...');
 
                 let task = this.newTask;
@@ -322,7 +322,7 @@
                 this.showAddTaskDialog = false;
             },
             validateUser: function (action) {
-                if(!this.$store.state.user) {
+                if (!this.$store.state.user) {
                     alert('You need to login to ' + action);
                     return false;
                 }

@@ -140,7 +140,7 @@
 <script>
     import {Vue} from "vue";
     import {VToolbar, VLabel, VTooltip, VCard, VTabs, VTab, VTabItem} from "vuetify/lib"
-    import ModelsPanel from '@/components/TasksPanel'
+    import ModelsPanel from './components/TasksPanel'
 
     import firebase from 'firebase'
     import {bus} from "@/bus";
