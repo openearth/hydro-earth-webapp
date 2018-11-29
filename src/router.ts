@@ -6,8 +6,6 @@ import Tasks from './views/Tasks.vue';
 Vue.use(Router);
 
 export default new Router({
-    // mode: 'history', // this does not work with GitHub Pages :(
-    mode: 'hash',
     base: process.env.BASE_URL,
     routes: [
         {
