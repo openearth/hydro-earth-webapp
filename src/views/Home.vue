@@ -3,7 +3,7 @@
             access-token="pk.eyJ1IjoiZ2VubmFkaXkiLCJhIjoiMm9WN3VWQSJ9.b9s_EXvxcqiAbaf5GzrEnA"
             :map-options="{
                         // style: 'mapbox://styles/mapbox/dark-v9',
-                        style: 'mapbox://styles/gennadiy/cjiw5qm9q21nf2rl7suhlzbm5',
+                        style: 'mapbox://styles/gennadiy/cjtzpkpyk2e811fo9tgqbxqxd',
                         center: [0, 25],
                         zoom: 2
                         }"
